@@ -1,0 +1,54 @@
+*{
+    scroll-behavior: smooth;
+}
+
+
+#focim{
+    text-align: left;
+    margin: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    
+}
+.kep1{
+    width: 100%;
+    height: 300px;
+}
+.tajekoztato1{
+    font-family: sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.tajekoztato2{
+    font-family: sans-serif;
+    text-align: center;
+    margin: -10px;
+}
+#bankk{
+    text-align: center;
+    margin: 30px;
+}
+.tajekoztato3{
+    font-family: sans-serif;
+    text-align: center;
+    margin: -10px;
+    font-weight: bold;
+}
+
+ #megertes{
+    text-align: center;
+    margin: 35px;
+ }
+.jogok1{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 15px;
+    margin: 100px;
+}
+.jogok2{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 15px;
+    margin: -100px;
+}
