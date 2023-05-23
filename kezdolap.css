@@ -52,3 +52,75 @@
     font-size: 15px;
     margin: -100px;
 }
+#background{
+    background-image: url(blurry-gradient-haikei\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    width: 600px;
+  }
+  
+  .card:hover .card-img {
+    filter: blur(5px);
+  }
+  
+  .card-img {
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .card-img-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+  }
+  
+  .card-title {
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .card:hover .card-title {
+    opacity: 0;
+  }
+  
+  .card-text {
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .card:hover .card-text {
+    opacity: 0;
+  }
+  .napok {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .text-center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .custom-inline {
+    flex: 1.1;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  #back{
+    background-image: url(kakas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
