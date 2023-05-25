@@ -124,3 +124,32 @@
     background-size: cover;
     
   }
+  #element {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: width 0.3s ease;
+  }
+  
+  #element.animate {
+    width: 200px;
+  }
+
+  @keyframes moveImage {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(1800px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  #movingImage {
+    position: relative;
+    animation: moveImage 10s infinite;
+    width: 100px;
+    height: 100px;
+  }

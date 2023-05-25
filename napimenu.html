@@ -59,7 +59,8 @@
     <div id="background">
     </div> 
     </div>
-    <h2 class="napok">Hétfői ajánlataink:</h2>
+    
+    <h2 class="napok"><a id="horgony1">Hétfői ajánlataink:</a></h2>
     <h3>Borsóleves óriásnokedlivel:</h3>
     <h4>Hozzávalók:(1 adaghoz)</h4>
     <ul>
@@ -76,6 +77,7 @@
             <li>1.3 dkg finomliszt (kb.)</li>
                 <li>0.3 l víz (kb.)</li>
     </ul>
+   
     <h4>Elkészítés</h4>
     <ol>
        <li> A zöldborsót kifejtjük, a répákat megpucoljuk és felkarikázzuk. A hagymát apróra vágjuk.</li>
@@ -139,7 +141,7 @@
         
     </ol> 
     <p>Speciális étrendek: gluténmentes</p>
-    <h2 class="napok">Keddi ajánlataink:</h2>
+    <h2 class="napok"><a id="horgony2">Keddi ajánlataink:</a></h2>
     <h4>Hozzávalók:(1 adaghoz)</h4>
     <ul>
         <li>0.5 ek libazsír (vagy bármilyen zsiradék)</li>
@@ -223,7 +225,7 @@
     </ul> 
     <p>Speciális étrendek: tejmentes, laktózmentes</p>
 
-    <h2 class="napok">Szerdai ajánlataink:</h2>
+    <h2 class="napok"><a id="horgony3">Szerdai ajánlataink:</a></h2>
     <h3>Vegán zöldségleves:</h3>
     <h4>Hozzávalók:(6 adaghoz)</h4>
     <ul>
@@ -244,6 +246,7 @@
         <li>1 késhegynyi kurkuma</li>
         <li>1 csokor petrezselyem</li>
     </ul>
+
     <h4>Elkészítés</h4>
     <ol>
         <li>A szárzellert, a répákat és a karalábét megpucoljuk és felaprítjuk. Közepes méretű fazékban olívaolajat hevítünk, és rádobjuk az aprított zöldségeket. Folyamatos kevergetés mellett egy-két percet pirítjuk, majd felöntjük két liter vízzel.</li>
@@ -316,7 +319,7 @@
     
     </ul> 
     <p>Speciális étrendek: gluténmentes, tejmentes, tojásmentes, laktózmentes</p>
-    <h2 class="napok">Csütörtöki ajánlataink:</h2>
+    <h2 class="napok"><a id="horgony4">Csütörtöki ajánlataink:</a></h2>
     <h3>Brokkolikrémleves baconchips-szel:</h3>
     <h4>Hozzávalók:(4 adaghoz)</h4>
     <ul>
@@ -404,7 +407,7 @@
         <li>Sütés ideje: 15 perc</li>
     </ul>
     <p>Speciális étrendek: tejmentes, laktózmentes</p>
-    <h2 class="napok">Pénteki ajánlataink:</h2>
+    <h2 class="napok"><a id="horgony5">Pénteki ajánlataink:</a></h2>
 
     <h3>Sajtkrémleves négyfajta sajtból:</h3>
     <h4>Hozzávalók:(4 adaghoz)</h4>
@@ -499,5 +502,26 @@
         <li>Sütés ideje: 12 perc</li>
     </ul>
     <p>Speciális étrendek:vegetáriánus</p>
+
+    <button id="backToTopButton">Vissza a lap tetejére</button>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+  var urlParams = new URLSearchParams(window.location.search);
+  var valasztottSzoveg = urlParams.get("valasztott_szoveg");
+
+  if (valasztottSzoveg) {
+    var valasztottDiv = document.getElementById("valasztott_szoveg_" + valasztottSzoveg);
+    if (valasztottDiv) {
+      valasztottDiv.style.display = "block";
+    }
+  }
+});
+
+document.getElementById("backToTopButton").addEventListener("click", function() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+    </script>
     </body>
     </html>
