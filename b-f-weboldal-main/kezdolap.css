@@ -1,0 +1,155 @@
+*{
+    scroll-behavior: smooth;
+}
+
+
+#focim{
+    text-align: left;
+    margin: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    
+}
+.kep1{
+    width: 100%;
+    height: 300px;
+}
+.tajekoztato1{
+    font-family: sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.tajekoztato2{
+    font-family: sans-serif;
+    text-align: center;
+    margin: -10px;
+}
+#bankk{
+    text-align: center;
+    margin: 30px;
+}
+.tajekoztato3{
+    font-family: sans-serif;
+    text-align: center;
+    margin: -10px;
+    font-weight: bold;
+}
+
+ #megertes{
+    text-align: center;
+    margin: 35px;
+ }
+.jogok1{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 15px;
+    margin: 100px;
+}
+.jogok2{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 15px;
+    margin: -100px;
+}
+#background{
+    background-image: url(blurry-gradient-haikei\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    width: 600px;
+  }
+  
+  .card:hover .card-img {
+    filter: blur(5px);
+  }
+  
+  .card-img {
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .card-img-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+  }
+  
+  .card-title {
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .card:hover .card-title {
+    opacity: 0;
+  }
+  
+  .card-text {
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .card:hover .card-text {
+    opacity: 0;
+  }
+  .napok {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .text-center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .custom-inline {
+    flex: 1.1;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  #back{
+    background-image: url(kakas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  #element {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: width 0.3s ease;
+  }
+  
+  #element.animate {
+    width: 200px;
+  }
+
+  @keyframes moveImage {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(1800px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  #movingImage {
+    position: relative;
+    animation: moveImage 10s infinite;
+    width: 100px;
+    height: 100px;
+  }
